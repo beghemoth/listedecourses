@@ -56,5 +56,7 @@ on en crée une vide sous forme d'array avant la suite */
     res.redirect('/todo');
 })
 /* run with "node app.jc" command */
-.listen(8080);
+.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
 
