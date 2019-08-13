@@ -7,6 +7,8 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 var app = express();
 
+var port = process.env.PORT || 8080;
+
 
 /* On utilise les sessions */
 app.use(session({secret: 'todotopsecret'}))
